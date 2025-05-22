@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Квіткова мрія</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      color: #fff;
+    }
+    #cart {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      font-weight: bold;
+      color: #cc3366;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #cc3366;
+    }
+    .flower-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .flower {
+      background-color: #ffeef3;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .flower img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .buy-button {
+      margin-top: 10px;
+      background-color: #cc3366;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .buy-button:hover {
+      background-color: #b22e59;
+    }
+    footer {
+      background-color: #ffccd5;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Квіткова мрія – Головна</title>
+</head>
+<body>
+
+<!-- Меню -->
+<nav style="background-color: #ffc0cb; padding: 15px; text-align: center;">
+  <a href="index.html" style="margin: 0 15px; text-decoration: none;">Головна</a>
+  <a href="flowers.html" style="margin: 0 15px; text-decoration: none;">Наші квіти</a>
+  <a href="about.html" style="margin: 0 15px; text-decoration: none;">Про нас</a>
+  <a href="contacts.html" style="margin: 0 15px; text-decoration: none;">Контакти</a>
+</nav>
+
+<!-- Вміст -->
+<h1>Ласкаво просимо до «Квіткової мрії»!</h1>
+<p>У нас — найкращі букети зі свіжих квітів, з любов’ю підібрані для вас!</p>
+
+</body>
+</html>
+
+  <header>
+  <section style="background: linear-gradient(90deg, #ffe4ec, #ffd6ea); padding: 50px 25px; text-align: center; border-bottom: 3px solid #ff69b4;">
+  <h2 style="color: #cc0055; font-size: 38px; margin-bottom: 20px;">💐 Магазин мрії для поціновувачів квітів!</h2>
+
+  <p style="font-size: 22px; color: #333; max-width: 900px; margin: auto; line-height: 1.6;">
+    Ласкаво просимо до <strong>«Квіткової мрії»</strong> — місця, де кожна квітка має свою історію 🌺. 
+    Ми віримо, що квіти — це не просто подарунок, а мова почуттів. 
+    Саме тому ми створюємо букети, які викликають емоції: радість, вдячність, захоплення чи ніжність.
+  </p>
+
+  <p style="font-size: 22px; color: #333; max-width: 900px; margin: 25px auto 0; line-height: 1.6;">
+    Усі наші квіти — <strong>завжди свіжі</strong>, ми отримуємо поставки щодня. 
+    Ми працюємо тільки з перевіреними фермерами та постачальниками, тому в наявності є 
+    <strong>рідкісні імпортні сорти</strong> троянд, півоній, тюльпанів і навіть екзотичних квітів.
+  </p>
+
+  <p style="font-size: 24px; font-weight: bold; color: #b30059; margin-top: 30px;">
+    🌸 Зробіть своє замовлення сьогодні — і отримайте <u>знижку 10%</u> + безкоштовну листівку з побажанням!
+  </p>
+</section>
+    <h1>Квіткова мрія 🌸</h1>
+    <div id="cart">🛒 У кошику: <span id="cart-count">0</span></div>
+    <p>Найкращі букети — з любов'ю і натхненням</p>
+  </header>
+
+  <section>
+    <h2>Наші квіти</h2>
+    <div class="flower-list">
+      <div class="flower">
+        <img src="https://i.pinimg.com/736x/9c/db/de/9cdbdee0ded0af334cd8811f0ee41648.jpg" alt="Півонії">
+        <h3>Півонії</h3>
+        <p>Ніжні рожеві квіти для особливих моментів</p>
+        <button class="buy-button" onclick="addToCart()">Додати до кошика</button>
+      </div>
+      <div class="flower">
+        <img src="https://i.pinimg.com/736x/75/ca/a3/75caa3d8f377224a3573a83fcd8e72c3.jpg" alt="Ромашки">
+        <h3>Ромашки</h3>
+        <p>Символ простоти, чистоти й літа</p>
+        <button class="buy-button" onclick="addToCart()">Додати до кошика</button>
+      </div>
+      <div class="flower">
+        <img src="https://i.pinimg.com/736x/ca/04/df/ca04dfdd2bd77e12be5162286a5da517.jpg" alt="Тюльпани">
+        <h3>Тюльпани</h3>
+        <p>Яскраві кольори весни для радості щодня</p>
+        <button class="buy-button" onclick="addToCart()">Додати до кошика</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Контакти</h2>
+    <p>Замовлення: <strong>+38 (097) 123-45-67</strong></p>
+    <p>Email: <strong>flowers@dream.ua</strong></p>
+  </section>
+
+  <footer>
+    © 2025 Квіткова мрія | Створено з любовʼю до квітів 🌼
+  </footer>
+
+  <script>
+    let cartCount = 0;
+    function addToCart() {
+      cartCount++;
+      document.getElementById("cart-count").textContent = cartCount;
+    }
+  </script>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Квіткова мрія</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #fffafc;
+    }
+    nav {
+      background-color: #ffc0cb;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+    section {
+      padding: 100px 20px;
+      margin-top: 60px;
+    }
+    h1 {
+      color: #d63384;
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 250px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .flower-block {
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #c2185b;
+    }
+    footer {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Меню -->
+<nav>
+  <a href="#home">Головна</a>
+  <a href="#flowers">Наші квіти</a>
+  <a href="#about">Про нас</a>
+  <a href="#contacts">Контакти</a>
+</nav>
+
+<!-- Головна -->
+<section id="home">
+  <h1>Ласкаво просимо до «Квіткової мрії» 🌸</h1>
+  <p>Ми створюємо букети з любов’ю. У нас — тільки свіжі та імпортні квіти з найкращих теплиць. Замовити у нас — це подарувати емоцію!</p>
+</section>
+
+<div class="flower-block">
+  <img src="https://i.pinimg.com/736x/6f/a9/3b/6fa93bda53b760ec529cf8543bc13739.jpg" 
+  <div class="flower-block">
+  <img src="https://i.pinimg.com/736x/1d/49/1d/1d491d2948cd1e9c36a20ff40103cf08.jpg" 
+  <div class="flower-block">
+  <img src="https://i.pinimg.com/736x/db/92/a0/db92a01a22a9ae83311f537995fc617f.jpg" 
+  <div class="flower-block">
+  <img src="https://i.pinimg.com/736x/5a/ee/83/5aee8354191f64233435f129fb09a7fa.jpg" 
+ <div class="flower-block">
+  <img src="https://i.pinimg.com/736x/f6/0c/ec/f60cecbb76a047753d52495765a661fe.jpg" 
+  
+
+<!-- Наші квіти -->
+<section id="flowers">
+  <h1>Наші квіти 💐</h1>
+
+  <div class="flower-block">
+    <img src="https://i.pinimg.com/736x/7c/1a/0a/7c1a0a3a032e988fb5e4ffdfb7f9d640.jpg" alt="гортензії">
+    <h3>гортензії</h3>
+    <p>Ніжні та ароматні квіти для романтичного настрою.</p>
+    <a href="#" class="btn">Замовити</a>
+  </div>
+
+  <div class="flower-block">
+    <img src="https://i.pinimg.com/736x/5c/e2/87/5ce287ba429bc01163947f3160ff852b.jpg" alt="кустові троянди">
+    <h3>кустові троянди</h3>
+    <p>Символ любові та краси.</p>
+    <a href="#" class="btn">Замовити</a>
+  </div>
+
+  <div class="flower-block">
+    <img src="https://i.pinimg.com/736x/40/70/1d/40701d625b4f8b5ee9e84df85fe6f670.jpg" alt="лілії">
+    <h3>лілії</h3>
+    <p>Весняна яскравість у кожній пелюстці!</p>
+    <a href="#" class="btn">Замовити</a>
+  </div>
+</section>
+
+<!-- Про нас -->
+<section id="about">
+  <h1>Про нас 🏵️</h1>
+  <p>Вітаємо у «Квітковій мрії» — магазині, де професіоналізм зустрічається з ніжністю, а кожна квітка стає втіленням тепла та любові. Ми — команда досвідчених флористів, які з уважністю і натхненням підбирають кожен букет, щоб подарувати вам справжню красу і позитивні емоції.
+
+Наша місія — дарувати радість через мову квітів, адже ми віримо, що саме вони можуть розповісти найщиріші почуття без слів. Ми працюємо виключно з найякіснішими і свіжими квітами, щоб кожен наш виріб став неповторним символом турботи і ніжності.
+
+У «Квітковій мрії» ви знайдете широкий асортимент від класичних троянд до екзотичних орхідей та авторських композицій, створених з душею. Ми радо допоможемо вам підібрати ідеальний букет для будь-якого свята чи особливої миті, адже кожен подарунок від нас — це маленька казка, сповнена любові.
+
+Дякуємо, що довіряєте нам прикрашати ваше життя яскравими барвами квітів!</p>
+</section>
+<div class="flower-block">
+  <img src="https://i.pinimg.com/736x/8c/10/75/8c1075eff9a14adadfea1ae025507cb7.jpg"
+  <div class="flower-block">
+  <img src="https://i.pinimg.com/736x/7b/39/0a/7b390acd0ff35a81906ee5d5efb7143e.jpg"
+  
+<!-- Контакти -->
+<section id="contacts">
+  <h1>Контакти 📞</h1>
+  <p>
+    Телефон: +38 (097) 123-45-67<br>
+    Email: flowers@dream.ua<br>
+    Адреса: м. Київ, вул. Весняна, 12<br><br>
+    Ми працюємо щодня з 9:00 до 20:00. Завітай за ароматом свіжих квітів!
+  </p>
+</section>
+
+<!-- Футер -->
+<footer>
+  © 2025 Квіткова мрія | Створено з любов’ю до квітів 💖
+</footer>
+
+</body>
+</html>
+</body>
+</html>
